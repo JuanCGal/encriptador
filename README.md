@@ -17,4 +17,4 @@ La aplicación permite al usuario escribir un texto y encriptarlo con claves ya 
 - Javascript
 - ChatGPT.
 <h4>Autores</h4>
-[img src=""]
+<img src="https://avatars.githubusercontent.com/u/172854410?s=400&u=c7025ae536f792b1af70cea64746bdf97273f478&v=4" width="115"><sub>Juan Carlos Galvis</sub>
