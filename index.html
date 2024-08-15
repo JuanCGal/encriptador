@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es-co">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+           
+            <img src="./img/Logo.png" alt="Logo de alura">
+            
+        </header>
+
+        <main class="principal">
+            <section class="principal__entrada">
+                <!-- <input class="principal__entrada__input" type="text" placeholder="Ingrese su texto aquí"> -->
+
+                <textarea name="textoUsuario" id="textoUsuario" cols="30" rows="10" class="principal__entrada__input" type="text" placeholder="Ingrese su texto aquí"></textarea>
+
+                <div class="principal__entrada__validacion">
+                    <div class="principal__entrada__validacion__advertencia">
+                        <img src="./assets/signo-de-admiracion.png" alt="Signo de de admiración">
+                        <p id="soloLetras" class="principal__entrada__validacion__advertencia__parrafo">
+                            Solo letras minúsculas y sin acentos
+                        </p>
+                    </div>
+                    <div class="principal__entrada__botones">
+                        <button id="encriptar" class="principal__entrada__boton principal__botones" onclick="btnEncriptar()">Encriptar</button>
+                        <button id="desencriptar" class="principal__entrada__boton principal__botones" onclick="btnDesencriptar()">Desencriptar</button>
+                    </div>
+                </div>    
+            </section>
+            
+            <section class="principal__visualizar">
+                <textarea id="textoEncriptado" class="principal__visualizar__encriptado" cols="20" rows="10"></textarea>
+                                
+                <!-- <img id="imagenInicial" class="principal__visualizar__inicial__imagen" src="./img/gato.png" alt="Imagen de gato confundido"> -->
+                <div class="principal__visualizar__mensaje">
+                    <h2 class="principal__visualizar__inicial__subtitulo">Ningún mensaje fue encontrado</h2>
+                    <p class="principal__visualizar__ingresa">
+                        Ingresa el texto que deseas encriptar o desencriptar
+                    </p>
+                </div>
+            
+
+                <button id="botonCopiar" class="principal__visualizar__copiar principal__botones principal__visualizar__copiar__ocultar" onclick="copiarDesdeBoton()">Copiar</button>
+            </section>
+        </main>
+
+        <footer>
+            <p>
+                Creado por Juan C. Galvis - Agosto 2024
+            </p>
+        </footer>
+    </div> 
+    
+    <script src="/script.js"></script>
+</body>
+</html>
